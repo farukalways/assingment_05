@@ -12,21 +12,18 @@
 </head>
 
 <body class="max-w-screen-x mx-auto">
-
   <header class="max-w-screen-xl mx-auto sticky top-0 left-0">
     <div class="backdrop-blur-md bg-[#cf9520]/30 px-8">
       <nav class=" pt-4 pb-8 flex items-center justify-between">
         <div><button class="px-8 py-3 bg-[#B4F461] font-semibold rounded">Blog</button></div>
-
         <div class="flex items-center justify-center gap-2">
           <img src="./assets/logo.png" alt="">
           <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
         </div>
-
         <div class="flex items-center justify-center gap-2">
           <img src="./assets/coin.png" alt="">
           <p class="text-xl font-semibold">
-            5500 BDT
+            <span id="main_balance">5500</span> BDT
           </p>
         </div>
       </nav>
@@ -56,11 +53,13 @@
         <!-- details Container -->
         <div class="w-full md:w-1/2 flex flex-col gap-5">
           <!-- button -->
-          <button
-            class="max-w-28 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2">
+          <div
+            class="max-w-48 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2">
             <img src="./assets/coin.png" alt="">
-              <span>0 BDT</span>
-            </button>
+            <p class="text-xl font-semibold">
+              <span id="donate_noakhali">0</span> BDT
+            </p>
+        </div>
           <!-- heading -->
           <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
           <!-- paragraph -->
@@ -69,10 +68,10 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <!-- text input -->
-          <input class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
+          <input id="input-donate-noakhali" class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
             placeholder="Write Donation Amount">
           <!-- donate Now button -->
-          <button class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
+          <button id="btn-donate-noakhali" class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
         </div>
       </div>
     </section>
@@ -85,9 +84,13 @@
         <!-- details Container -->
         <div class="md:w-1/2 flex flex-col gap-8">
           <!-- button -->
-          <button
-            class="max-w-28 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2"><img
-              src="./assets/coin.png" alt=""><span>0 BDT</span></button>
+          <div
+            class="max-w-48 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2"><img
+              src="./assets/coin.png" alt="">
+              <p class="text-xl font-semibold">
+                <span id="donate_feni">0</span> BDT
+              </p>
+            </div>
           <!-- heading -->
           <h2 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
           <!-- paragraph -->
@@ -96,10 +99,10 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <!-- text input -->
-          <input class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
+          <input id="input_donate_feni" class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
             placeholder="Write Donation Amount">
           <!-- donate Now button -->
-          <button class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
+          <button id="btn_donate_feni" class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
         </div>
       </div>
     </section>
@@ -111,9 +114,13 @@
         <!-- details Container -->
         <div class="md:w-1/2 flex flex-col gap-10">
           <!-- button -->
-          <button
-            class="max-w-28 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2"><img
-              src="./assets/coin.png" alt=""><span>0 BDT</span></button>
+          <div
+            class="max-w-48 h-12 px-4 py-3 bg-slate-200 font-semibold rounded flex justify-center items-center gap-2"><img
+              src="./assets/coin.png" alt="">
+              <p class="text-xl font-semibold">
+                <span id="quota_movement">0</span> BDT
+              </p>
+            </div>
           <!-- heading -->
           <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
           <!-- paragraph -->
@@ -122,22 +129,17 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <!-- text input -->
-          <input class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
+          <input id="input_quota_movement" class="w-full px-3 py-4 outline-none border-2	border-[rgba(17, 17, 17, 0.1)] rounded" type="text"
             placeholder="Write Donation Amount">
           <!-- donate Now button -->
-          <button class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
+          <button id="btn_quota_movement" class="w-full h-12 px-8 py-3 bg-[#B4F461] font-semibold rounded">Donate Now</button>
         </div>
       </div>
     </section>
-
-
-
-
-
   </main>
-  <footer>
-
-  </footer>
+ 
+  <script src="js/donation.js"></script>
+  <script src="js/utilites.js"></script>
 </body>
 
 </html>
