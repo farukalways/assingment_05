@@ -15,7 +15,9 @@
   <header class="max-w-screen-xl mx-auto sticky top-0 left-0">
     <div class="backdrop-blur-md bg-[#cf9520]/30 px-8">
       <nav class=" pt-4 pb-8 flex items-center justify-between">
-        <div><button class="px-8 py-3 bg-[#B4F461] font-semibold rounded">Blog</button></div>
+        <div>
+          <button class="px-8 py-3 bg-[#B4F461] font-semibold rounded">Blog</button>
+        </div>
         <div class="flex items-center justify-center gap-2">
           <img src="./assets/logo.png" alt="">
           <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
@@ -32,10 +34,11 @@
     <section class="">
       <div class="w-full bg-white backdrop-blur-md bg-white/30 pt-10 pb-4 flex justify-center items-center gap-5">
         <div>
-          <button class="px-8 py-3 bg-[#B4F461] font-semibold rounded">Donation</button>
-        </div>
-        <div>
           <button
+          id="assets_btn"
+           class="px-8 py-3 bg-[#B4F461] font-semibold border border-[rgba(17, 17, 17, 0.3)] rounded">Donation</button>
+          <button
+          id="history_btn"
             class="max-w-28 h-12 px-8 py-3 border border-[rgba(17, 17, 17, 0.3)] font-semibold rounded">History</button>
         </div>
       </div>
@@ -43,6 +46,7 @@
   </header>
 
   <main>
+<section id="main_container">
     <!-- Donate for Flood at Noakhali, Bangladesh section start -->
     <section class="max-w-6xl mx-auto mb-5 md:mb-20 border	border-[rgba(17, 17, 17, 0.1)] rounded-xl bg-white p-8">
       <div class=" md:flex md:justify-center md:items-center gap-3">
@@ -106,7 +110,9 @@
         </div>
       </div>
     </section>
-    <!-- Donate for Flood at Noakhali, Bangladesh section start -->
+
+
+    <!-- Aid for Injured in the Quota Movement section start -->
     <section class="max-w-6xl mx-auto mb-5 md:mb-20 border	border-[rgba(17, 17, 17, 0.1)] rounded-xl bg-white p-8">
       <div class=" md:flex justify-center items-center gap-3">
         <!-- image -->
@@ -136,6 +142,19 @@
         </div>
       </div>
     </section>
+
+</section>
+
+<section id="history_contant" class="hidden max-w-6xl mx-auto mb-5 md:mb-20">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta dignissimos in quod reprehenderit nobis minus! Aspernatur non accusantium natus.</p>
+ 
+    </section>
+
   </main>
  
   <script src="js/donation.js"></script>
