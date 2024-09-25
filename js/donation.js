@@ -1,13 +1,17 @@
 
-//Donate for Flood at Noakhali, Bangladesh section start
+function getInputFieldValueById(id) {
+  const inputValue = parseFloat(document.getElementById(id).value);
+  return inputValue
+}
 
+
+//Donate for Flood at Noakhali, Bangladesh section start
 document.getElementById('btn-donate-noakhali')
   .addEventListener('click', function () {
 
     const accountBlance = parseFloat(document.getElementById('main_balance').innerText);
     const noakhaliDonate = getInputFieldValueById('input-donate-noakhali');
     const donateNoakhali = getTextFieldValueById('donate_noakhali');
-    const model = document.getElementById('my_modal_5');
 
     if (0 < noakhaliDonate) {
       const newBalance = accountBlance - noakhaliDonate;
@@ -16,12 +20,15 @@ document.getElementById('btn-donate-noakhali')
       document.getElementById('donate_noakhali').innerText = donateNewBalance;
 
       document.getElementById('input-donate-noakhali').value = '';
-      alert('Donate successfull')
+
+      // Show the success modal
+      document.getElementById('my_modal_5').showModal();
 
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p');
 
-      const currentTime = new Date().toLocaleString(); 
+      const currentTime = new Date().toLocaleString();
+
 
       // Add the donation amount and the time to the history
       p.innerText = ` ${noakhaliDonate} Taka is Donated for Flood at Noakhali, Bangladesh; at ${currentTime}`;
@@ -48,12 +55,14 @@ document.getElementById('btn_donate_feni')
       document.getElementById('donate_feni').innerText = donateNewBalance;
 
       document.getElementById('input_donate_feni').value = '';
-      alert('Donate successfull');
+
+      // Show the success modal
+      document.getElementById('my_modal_5').showModal();
 
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p');
 
-      const currentTime = new Date().toLocaleString(); 
+      const currentTime = new Date().toLocaleString();
 
       // Add the donation amount and the time to the history
       p.innerText = ` ${feniDonate} Taka is Donated for Flood at Feni, Bangladesh; at ${currentTime}`;
@@ -77,13 +86,14 @@ document.getElementById('btn_quota_movement')
       const donateQuota = donateQuotaBalance + quotaMovement;
       document.getElementById('quota_movement').innerText = donateQuota;
       document.getElementById('input_quota_movement').value = '';
-      alert('Donate successfull');
+       // Show the success modal
+       document.getElementById('my_modal_5').showModal();
 
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p')
-      
 
-      const currentTime = new Date().toLocaleString(); 
+
+      const currentTime = new Date().toLocaleString();
 
       // Add the donation amount and the time to the history
       p.innerText = ` ${quotaMovement} Taka is Donated for Quota Movement, Bangladesh; at ${currentTime}`;
