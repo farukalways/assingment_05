@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog || Donate Bangladesh </title>
+  <!-- daisyui an tailwind css link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome link add -->
+  <script src="https://kit.fontawesome.com/27e6000101.js" crossorigin="anonymous"></script>
+  <style>
+    .icon.active{
+      transform: rotate(-180deg);
+    }
+    .answer.active{
+      max-height: max-content;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+  <header class="max-w-screen-xl mx-auto sticky top-0 left-0 border-b-2 border-[rgba(17, 17, 17, 0.3)] mb-6">
+    <div class="backdrop-blur-md bg-[#cf9520]/30 px-8">
+      <nav class=" pt-4 pb-8 flex items-center justify-between">
+        <div class="mr-5">
+          <button class="px-8 py-3 bg-[#B4F461] font-semibold rounded"><a href="index.html">Home</a></button>
+        </div>
+        <div class="flex items-center justify-center gap-2 ">
+          <img class="w-10" src="./assets/logo.png" alt="">
+          <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <img src="./assets/coin.png" alt="">
+          <p class="text-xl font-semibold">
+            <span id="main_balance">5500</span> BDT
+          </p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Improtant FAQ container start -->
+
+   <section class="max-w-screen-xl mx-auto p-8">
+    <h2 class="text-4xl font-bold mb-8">Improtant FAQ <i class="fa-solid fa-person-circle-question"></i></h2>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded bg-white py-3">
+      <div class="collapse-title text-xl font-medium">What is the document object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface that represents and manipulates a web document's
+          structure and content.</p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded bg-white py-3">
+      <div class="collapse-title text-xl font-medium">How do you select an element from the Dom?</div>
+      <div class="collapse-content">
+        <p>I can select an element from the DOM using methods like getElementById, querySelector, or
+          getElementsByClassName.</p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded bg-white py-3">
+      <div class="collapse-title text-xl font-medium">What is the event delegation in the content of the Dom and why is the useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation allows a parent element to handle events for its children using event bubbling, which is
+          efficient for dynamically added elements.</p>
+      </div>
+    </div>
+
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded bg-white py-3 ">
+      <div class="collapse-title text-xl font-medium ">How do you manipulate an elements attributes and styles using the Dom?</div>
+      <div class="collapse-content">
+        <p>You can manipulate an element's attributes using setAttribute or directly access properties like id or
+          className. To modify styles, use style property, e.g., element.style.color = "red".</p>
+      </div>
+    </div>
+
+   </section>
+
+  </main>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -7,6 +7,7 @@ document.getElementById('btn-donate-noakhali')
     const accountBlance = parseFloat(document.getElementById('main_balance').innerText);
     const noakhaliDonate = getInputFieldValueById('input-donate-noakhali');
     const donateNoakhali = getTextFieldValueById('donate_noakhali');
+    const model = document.getElementById('my_modal_5');
 
     if (0 < noakhaliDonate) {
       const newBalance = accountBlance - noakhaliDonate;
@@ -15,7 +16,7 @@ document.getElementById('btn-donate-noakhali')
       document.getElementById('donate_noakhali').innerText = donateNewBalance;
 
       document.getElementById('input-donate-noakhali').value = '';
-
+      
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p');
 
