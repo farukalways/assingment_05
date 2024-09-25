@@ -16,7 +16,8 @@ document.getElementById('btn-donate-noakhali')
       document.getElementById('donate_noakhali').innerText = donateNewBalance;
 
       document.getElementById('input-donate-noakhali').value = '';
-      
+      alert('Donate successfull')
+
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p');
 
@@ -47,6 +48,7 @@ document.getElementById('btn_donate_feni')
       document.getElementById('donate_feni').innerText = donateNewBalance;
 
       document.getElementById('input_donate_feni').value = '';
+      alert('Donate successfull');
 
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p');
@@ -75,8 +77,11 @@ document.getElementById('btn_quota_movement')
       const donateQuota = donateQuotaBalance + quotaMovement;
       document.getElementById('quota_movement').innerText = donateQuota;
       document.getElementById('input_quota_movement').value = '';
+      alert('Donate successfull');
+
       const historyContant = document.getElementById('history_contant');
       const p = document.createElement('p')
+      
 
       const currentTime = new Date().toLocaleString(); 
 
